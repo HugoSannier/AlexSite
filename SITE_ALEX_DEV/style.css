@@ -1,0 +1,248 @@
+
+
+
+@font-face {
+    font-family: didot;
+    src: url(./assets/GFSDidot-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./assets/Montserrat-VariableFont_wght.ttf);
+}
+
+
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    /* border: .5px solid black; */
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+.topnav{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 0;
+    right: 0;
+    align-items: center;
+    z-index: 10000;
+}
+
+.logo{
+    text-decoration: none;
+    /* background-color: blue; */
+    width: 20px;
+    height: 10px;
+    margin: 10px;
+    display: inline-block;
+    line-height: 100px;
+    transition: .3s;
+}
+
+
+#logo {
+    position: absolute;
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    /* display: block; */
+    font-family: didot;
+    top: 20%;
+    padding: 20px;
+    z-index: 20;
+    transition: .2s;
+    font-weight: 500;
+    left: 10px;
+    font-size: 20px;
+    letter-spacing: 3px;
+       
+}
+
+#logo:hover{
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+}
+
+.topnav ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    justify-content: right;
+
+}
+
+.topnav ul li {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    line-height: 100px;
+    position: relative;
+    
+
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    position: relative;
+    font-family: montserrat;
+    padding: 0 20px;
+    display: block;
+    transition: .2s;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 2px blue solid;
+}
+
+ul li a:hover{
+    /* text-decoration: underline; */
+    /* color: red; */
+    scale: 1.2;
+    letter-spacing: 5px;
+    color: none;
+}
+
+.logo:hover{
+    scale: 1.2;
+}
+
+main{
+    background: rgb(99, 86, 86);
+}
+
+.homepictures{
+    height: 700px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    z-index: 5;
+
+}
+
+.pics{
+    height: 800px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+    
+}
+
+.pics img{
+    display: none;
+    border: 2px solid red;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    /* border: 2px red solid; */
+    object-fit: cover;
+    top: 0%;
+    left: 0%;
+
+}
+
+.boutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* z-index: 22;
+    background: red; */
+}
+
+.boutton a {
+    top: 50%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.541);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.352);
+    margin: 10px;
+    color: rgb(230, 225, 225);
+    transition: .7s;
+    transform: translateY(-50%);
+    opacity: .2;
+    font-size: 40px;
+}
+
+.bouttonnext a {
+    right: 0%;
+    position: absolute;
+    text-decoration: none;
+}
+
+.bouttonnext a p {
+    transform: translateY(-10%);
+
+}
+.bouttonprevious a {
+    left: 0%;
+    position: absolute;
+    text-decoration: none;
+}
+
+.bouttonprevious a p{
+    transform: translateY(-10%);
+}
+
+.boutton a:hover{
+    color: rgba(0, 0, 0, 0.358);
+    /* background: white; */
+    /* letter-spacing: 15px; */
+    /* color: black; */
+    opacity: .8;
+}
+
+
+.botnav{
+    background: rgb(255, 255, 255);
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    z-index: 5;
+}
+
+.botnav ul{
+    position: absolute;
+    right: 0px;
+    align-items: center;
+
+}
+
+.botnav ul li{
+    list-style: none;
+    right: 0px;
+    display: inline;
+    line-height: 75px;
+    margin: 0 10px;
+
+
+}
+
+.botnav ul li a {
+    position: relative ;
+    right: 0px;
+    bottom: 0px;
+    text-decoration: none;
+    transition: .3s;
+    color: rgb(0, 0, 0);
+    font-family: didot;
+    font-weight: 400;
+
+}

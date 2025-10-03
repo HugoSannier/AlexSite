@@ -1,0 +1,392 @@
+@font-face {
+    font-family: didot;
+    src: url(./assets/GFSDidot-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./assets/Montserrat-VariableFont_wght.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: .5px solid black; */
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100px auto 10%;
+    height: 100%;
+
+}
+
+header {
+    height: 100%;
+    /* border: 2px red solid; */
+}
+
+.telnav {
+    display: none;
+}
+
+
+.topnav {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.logo {
+    text-decoration: none;
+    /* background-color: blue; */
+    width: 20px;
+    height: 10px;
+    margin: 10px;
+    display: inline-block;
+    transition: .3s;
+}
+
+#Atelier {
+    color: rgb(115, 98, 0);
+}
+
+#logo {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* display: block; */
+    font-family: Garamond;
+    top: 45px;
+    padding: 20px;
+    z-index: 20;
+    transition: .2s;
+    font-weight: 400;
+    left: 10px;
+    font-size: 28px;
+    letter-spacing: 0px;
+    /* border: 2px red solid; */
+    line-height: 20px;
+    transform: translateY(-50%);
+
+}
+
+
+.topnav ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    justify-content: right;
+}
+
+.topnav ul li {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    line-height: 100px;
+    position: relative;
+
+
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    position: relative;
+    font-family: montserrat;
+    padding: 0 20px;
+    display: flex;
+    transition: .1s;
+    color: rgb(67, 67, 67);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+ul li a:hover {
+    /* text-decoration: underline; */
+    /* color: red; */
+    scale: 1.1;
+    /* letter-spacing: 1.5px; */
+    color: black;
+}
+
+/* ***************IMAGE MENU*********** */
+
+main {
+    height: auto;
+    /* border: red 2px solid; */
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.homepictures {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    /* border: 2px green solid; */
+}
+
+
+.homepictures img {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0%;
+    left: 0%;
+    /* border: 2px cyan solid; */
+
+
+}
+
+img.active {
+    display: block;
+    animation: fade .2s linear;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.boutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* z-index: 22;
+    background: red; */
+}
+
+.boutton a {
+    top: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.358);
+    transition: .3s;
+    transform: translateY(-50%);
+    opacity: 1;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.bouttonnext a {
+    right: 0%;
+    position: absolute;
+    text-decoration: none;
+}
+
+.bouttonnext a p {
+    transform: translateY(-10%);
+
+}
+
+.bouttonprevious a {
+    left: 0%;
+    position: absolute;
+    text-decoration: none;
+}
+
+.bouttonprevious a p {
+    transform: translateY(-10%);
+}
+
+.boutton a:hover {
+    color: white;
+    /* background: white; */
+    /* letter-spacing: 15px; */
+    /* color: black; */
+    opacity: .8;
+}
+
+/* *************FOOTER************ */
+
+footer {
+    position: relative;
+    height: 100%;
+}
+
+.botnav {
+    /* background: rgb(255, 255, 255); */
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 500;
+}
+
+.botnav ul {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    align-items: center;
+    z-index: 500;
+
+}
+
+.botnav ul li {
+    list-style: none;
+    right: 0px;
+    display: inline;
+    line-height: 75px;
+    margin: 0 10px;
+    z-index: 500;
+
+
+}
+
+.botnav ul li a {
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    text-decoration: none;
+    transition: .1s;
+    color: rgb(45, 45, 45);
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 11px;
+
+}
+
+.botnav ul li a:hover {
+    scale: 1.2;
+    font-size: 12px;
+    color: black;
+}
+
+/***********************MENU DEROULANT TELEPHONNE************/
+
+@media screen and (max-width: 600px) {
+
+    .topnav ul {
+        display: none;
+    }
+
+    .telnav {
+        height: 600px;
+        width: 100%;
+        background-color: white;
+        /* border: 2px red solid; */
+        display: flex;
+        position: absolute;
+        z-index: 2000;
+        flex-direction: column;
+        right: 0px;
+        transform: translateX(-200%);
+        transition: .3s;
+    }
+
+    .telnav ul {
+        /* border: 2px red solid; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .telnav ul li {
+        /* border: green 2px solid; */
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .telnav ul li a {
+        text-decoration: none;
+        color: rgb(78, 78, 78);
+        font-family: montserrat;
+        transition: .2s;
+
+    }
+
+
+
+    .logohamburger {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 20px;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+
+    }
+
+    .logohamburger a {
+        text-decoration: none;
+        color: rgb(78, 78, 78);
+        font-weight: 400;
+        font-family: montserrat;
+        font-size: 35px;
+        letter-spacing: 1px;
+        opacity: 1;
+        transition: .3s;
+
+    }
+
+
+    .cross {
+        color: rgb(78, 78, 78);
+        font-family: montserrat;
+        position: absolute;
+        right: 35px;
+        top: 50px;
+        transform: translate(0, -50%);
+        font-size: 20px;
+        font-weight: 900;
+        opacity: 0;
+        transition: .3s;
+        display: none;
+    }
+
+    .cross a {
+        font-family: montserrat;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .cross a:visited {
+        color: rgb(78, 78, 78);
+    }
+}

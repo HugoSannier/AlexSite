@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /asset/
+
+
+Sitemap: https://www.atelieralexandrejamet.com/sitemap.xml

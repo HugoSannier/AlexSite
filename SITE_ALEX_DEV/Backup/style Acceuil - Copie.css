@@ -1,0 +1,290 @@
+
+
+
+@font-face {
+    font-family: didot;
+    src: url(./assets/GFSDidot-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./assets/Montserrat-VariableFont_wght.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: .5px solid black; */
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+.topnav{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 0;
+    right: 0;
+    align-items: center;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.logo{
+    text-decoration: none;
+    /* background-color: blue; */
+    width: 20px;
+    height: 10px;
+    margin: 10px;
+    display: inline-block;
+    line-height: 100px;
+    transition: .3s;
+}
+
+#Atelier{
+    color: rgb(115, 98, 0);
+}
+
+#logo {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* display: block; */
+    font-family: Garamond;
+    top: 50%;
+    padding: 20px;
+    z-index: 20;
+    transition: .2s;
+    font-weight: 400;
+    left: 10px;
+    font-size: 28px;
+    letter-spacing: 0px;
+    /* border: 2px red solid; */
+    line-height: 20px;
+    transform: translateY(-50%);
+       
+}
+
+
+.topnav ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    justify-content: right;
+
+}
+
+.topnav ul li {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    line-height: 100px;
+    position: relative;
+    
+
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    position: relative;
+    font-family: montserrat;
+    padding: 0 20px;
+    display: block;
+    transition: .1s;
+    color: rgb(67, 67, 67);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+ul li a:hover{
+    /* text-decoration: underline; */
+    /* color: red; */
+    scale: 1.1;
+    /* letter-spacing: 1.5px; */
+    color: black;
+}
+
+/* @media screen and (max-width: 850px){
+
+    .logohamburger{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 20px;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        
+    }
+    .logohamburger a{
+        text-decoration: none;
+        color: rgb(78, 78, 78);
+        font-weight: 400;
+        font-family: montserrat;
+        font-size: 35px;
+        letter-spacing: 1px;
+        
+    }
+    .topnav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        transform: translate(0, -50%);
+        border: 2px red solid;
+        z-index: 1000;
+    }
+    
+} */
+
+
+
+
+
+.homepictures{
+    height: 700px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    z-index: 5;
+
+}
+
+.pics{
+    height: 800px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+    
+}
+
+.pics img {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0%;
+    left: 0%;
+
+}
+
+.boutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* z-index: 22;
+    background: red; */
+}
+
+.boutton a {
+    top: 50%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.541);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.352);
+    margin: 10px;
+    color: rgb(230, 225, 225);
+    transition: .7s;
+    transform: translateY(-50%);
+    opacity: .2;
+    font-size: 40px;
+}
+
+.bouttonnext a {
+    right: 0%;
+    position: absolute;
+    text-decoration: none;
+}
+
+.bouttonnext a p {
+    transform: translateY(-10%);
+
+}
+.bouttonprevious a {
+    left: 0%;
+    position: absolute;
+    text-decoration: none;
+}
+
+.bouttonprevious a p{
+    transform: translateY(-10%);
+}
+
+.boutton a:hover{
+    color: rgba(0, 0, 0, 0.358);
+    /* background: white; */
+    /* letter-spacing: 15px; */
+    /* color: black; */
+    opacity: .8;
+}
+
+
+.botnav{
+    background: rgb(255, 255, 255);
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    z-index: 5;
+}
+
+.botnav ul{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    align-items: center;
+
+}
+
+.botnav ul li{
+    list-style: none;
+    right: 0px;
+    display: inline;
+    line-height: 75px;
+    margin: 0 10px;
+
+
+}
+
+.botnav ul li a {
+    position: relative ;
+    right: 0px;
+    bottom: 0px;
+    text-decoration: none;
+    transition: .1s;
+    color: rgb(45, 45, 45);
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 11px;
+
+}
+
+.botnav ul li a:hover{
+    scale: 1.2;
+    font-size: 12px;
+    color: black;
+}
+

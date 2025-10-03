@@ -1,0 +1,569 @@
+@font-face {
+    font-family: didot;
+    src: url(./assets/GFSDidot-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./assets/Montserrat-VariableFont_wght.ttf);
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    max-width: 500vh;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+main{
+    transition: .3s;
+    /* top: 100px; */
+    /* border: 2px red solid; */
+    position:absolute;
+    width: 100%;
+    height: auto;
+
+}
+
+header {
+    height: 100px;
+    position: relative;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: .5px solid black; */
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+.telnav{
+    display: none;
+}
+
+.logohamburger{
+    display: none;
+}
+/* **************TOPNAV************ */
+.topnav{
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    z-index: 10000;
+    transition: .5s;
+    
+}
+
+
+
+.logo{
+    text-decoration: none;
+    /* background-color: blue; */
+    width: 20px;
+    height: 10px;
+    margin: 10px;
+    display: inline-block;
+    line-height: 100px;
+    transition: .3s;
+}
+
+#Atelier{
+    color: rgb(115, 98, 0);
+}
+
+#logo {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* display: block; */
+    font-family: Garamond;
+    top: 50%;
+    padding: 20px;
+    z-index: 20;
+    transition: .2s;
+    font-weight: 400;
+    left: 10px;
+    font-size: 28px;
+    letter-spacing: 0px;
+    /* border: 2px red solid; */
+    line-height: 20px;
+    transform: translateY(-50%);
+       
+}
+
+
+.topnav ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    justify-content: right;
+
+}
+
+.topnav ul li {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    line-height: 100px;
+    position: relative;
+    
+
+}
+
+.topnav ul li a {
+    text-decoration: none;
+    position: relative;
+    font-family: montserrat;
+    padding: 0 20px;
+    display: block;
+    transition: .1s;
+    color: rgb(67, 67, 67);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+ul li a:hover{
+    /* text-decoration: underline; */
+    /* color: red; */
+    scale: 1.1;
+    /* letter-spacing: 1.5px; */
+    color: black;
+}
+
+.logo:hover{
+    scale: 1.2;
+}
+
+/* ********************************** */
+
+/* *************TELNAV*************** */
+@media screen and (max-width: 650px){
+
+    .topnav ul{
+        display: none;
+    }
+
+    .telnav{
+        height: 600px;
+        width: 100%;
+        background-color: white;
+        /* border: 2px red solid; */
+        display: flex;
+        position: absolute;
+        z-index: 2000;
+        flex-direction: column;
+        right: 0px;
+        transform: translateX(-200%);
+        transition: .3s;
+    }
+
+    .telnav ul {
+        /* border: 2px red solid; */
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .telnav ul li {
+        /* border: green 2px solid; */
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .telnav ul li a {
+        text-decoration: none;
+        color: rgb(78, 78, 78);
+        font-family: montserrat;
+        transition: .2s;
+
+    }
+
+
+
+    .logohamburger{
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 20px;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none;
+        
+    }
+    .logohamburger a{
+        text-decoration: none;
+        color: rgb(78, 78, 78);
+        font-weight: 400;
+        font-family: montserrat;
+        font-size: 35px;
+        letter-spacing: 1px;
+        opacity: 1;
+        transition: .3s;
+        
+    }  
+
+    
+    .cross{
+        color: rgb(78, 78, 78);
+        font-family: montserrat;
+        position: absolute;
+        right: 35px;
+        top: 50px;
+        transform: translate(0, -50%);
+        font-size: 20px;
+        font-weight: 900;
+        opacity: 0;
+        transition: .3s;
+        display: none;
+    }
+    .cross a{
+        font-family: montserrat;
+        font-weight: 400;
+        text-decoration: none;   
+    }
+    .cross a:visited{
+        color: rgb(78, 78, 78);
+    }
+}
+
+/* *********************************** */
+
+/* ************MAIN******************** */
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    flex-grow: 10;
+}
+
+h2{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: montserrat;
+    font-weight: 300;
+    color: rgb(40, 40, 40);
+    letter-spacing: 8px;
+    margin: 25px auto 60px;
+    
+}
+
+h3{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: montserrat;
+    font-weight: 300;
+    color: rgb(40, 40, 40);
+    letter-spacing: 6px;
+    margin: 25px auto 25px;
+    
+}
+
+.containerform{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    /* background: grey; */
+    width: 100%;
+    height: 800px;
+    position: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.containerform .image{
+    position: relative;
+    height: 100%;
+    border-bottom: 15px white solid;
+}
+
+.containerform img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 2px;
+    /* border: rgb(30, 116, 214) 2px solid; */
+}
+
+
+.Name{
+    grid-area: g;
+}
+.FirstName{
+    grid-area: b;
+}
+.Mail{
+    grid-area: r;
+}
+
+
+.formulaire{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2.5fr 1fr;
+    grid-template-areas: 
+        "g "
+        "b "
+        "r"
+        "y"
+        "y";
+    
+    height: 100%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    /* padding: 2px; */
+}
+
+
+
+.containerform .formulaire label{
+    border-bottom: 5px white solid;
+    border-top: 5px white solid;
+    height: 100%;    
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.containerform .formulaire input{
+    border: none;
+    position: absolute;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-family: montserrat;
+    font-size: 13.5px;
+    font-weight: 400;
+    border: 1px rgba(71, 71, 71, 0.454) solid;
+    border-radius: 3px;
+    transition: .2s;
+    padding-left: 5px;
+
+}
+.containerform .formulaire input:hover{
+    border: 1.3px solid black;
+}
+
+.Text :hover{
+    border: 1.3px solid black;
+}
+
+
+.Text {
+    grid-area: y;
+    resize: none;
+    height: 100%;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13.5px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(65, 65, 65, 0.454);
+    border-radius: 3px;
+    transition: .2s;
+    font-family: montserrat;
+    padding-left: 5px;
+    
+}
+
+
+.containerform .formulaire .tarea{
+    height: 100% ;
+}
+
+#Submit{
+    background-color: white;
+    font-family: montserrat;
+    font-weight: 400;
+    color: rgb(155, 155, 155);
+    transition: .3s;
+}
+#Submit:hover{
+    color: black;
+    /* letter-spacing: 3px; */
+    background-color: rgba(155, 155, 155, .05);
+}
+
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    /* background-color: aqua; */
+}
+
+.Contact .Atelier {
+    text-align: center;
+    font-family: montserrat;
+    font-size: 13.5;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin: 10px;
+    margin-top: 25px;
+    color: black;
+}
+
+.Contact .Rue {
+    margin-top: 15px;
+}
+
+.Contact .Tiret {
+    font-size: 25;
+}
+
+.Contact p {
+    text-align: center;
+    font-family: montserrat;
+    font-size: 10;
+    letter-spacing: normal;
+    margin: 5px;
+    color: rgb(117, 116, 116);
+}
+/* ************************************* */
+
+/* ******************RESPONSIVE********* */
+
+@media screen and (max-width: 1100px){
+    .containerform{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+}
+@media screen and (max-width: 650px){
+
+    body{
+        overflow: visible;
+    }
+
+    .containerform{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+       margin: 0px;
+       padding: 3%;
+    }
+
+    .topnav ul li a{
+        visibility: hidden;
+    }
+
+    .containerform .image{
+        position: relative;
+        margin-bottom: 8px;
+        padding: 3%;
+    }
+
+    .containerform .image img{
+        
+        margin-bottom: 3px;
+        width: 100%;
+        position: absolute;
+        padding-left: 1.9%;
+        padding-right: 1.9%;
+    }
+
+}
+
+/* ************************************* */
+
+
+/* **************FOOTER************** */
+footer {
+    position: relative;
+    height: 100px;
+    /* border: 2px rebeccapurple solid; */
+    bottom: 0px;
+}
+
+.botnav {
+    background: rgb(255, 255, 255);
+    border-top: 1px solid rgba(0, 0, 0, 0.555);
+    /* align-items: center; */
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 500;
+    /* border: 2px red solid; */
+    position: relative;
+    bottom: 0px;
+    display: block;
+}
+
+.botnav ul {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    align-items: center;
+    z-index: 500;
+
+}
+
+.botnav ul li {
+    list-style: none;
+    right: 0px;
+    display: inline;
+    line-height: 75px;
+    margin: 0 10px;
+    z-index: 500;
+
+
+}
+
+.botnav ul li a {
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    text-decoration: none;
+    transition: .1s;
+    color: rgb(45, 45, 45);
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 11px;
+
+}
+
+.botnav ul li a:hover {
+    scale: 1.2;
+    font-size: 12px;
+    color: black;
+}
