@@ -1,11 +1,11 @@
 const hamburgerbtn = document.querySelector(".hamburgerbtn");
-const topNav = document.querySelector(".topnav");
+const telTopNav = document.querySelector(".tel_topnav");
 const cross = document.querySelector(".cross");
 const crossbtn = document.querySelector(".crossbtn");
 const telnav = document.querySelector(".telnav");
 const main = document.querySelector("main");
-console.log(hamburgerbtn, topNav, cross, crossbtn, telnav, main);
-
+console.log(hamburgerbtn, telTopNav, cross, crossbtn, telnav, main);
+console.log("blblbl");
 hamburgerbtn.addEventListener("click", () => {
   hamburgerbtn.style.opacity = "0";
   hamburgerbtn.style.display = "none";
@@ -31,10 +31,10 @@ crossbtn.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 30) {
-    topNav.style.height = "75" + "px";
-    topNav.style.borderBottom = " 1px  rgba(0, 0, 0, 0.555) solid";
+    telTopNav.style.height = "75" + "px";
+    telTopNav.style.borderBottom = " 1px  rgba(0, 0, 0, 0.555) solid";
   } else if (window.scrollY < 30) {
-    topNav.style.height = "100" + "px";
-    topNav.style.borderBottom = "none";
+    telTopNav.style.height = "100" + "px";
+    telTopNav.style.borderBottom = "none";
   }
 });

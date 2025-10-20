@@ -4,8 +4,12 @@ const cross = document.querySelector(".cross");
 const crossbtn = document.querySelector(".crossbtn");
 const telnav = document.querySelector(".telnav");
 const main = document.querySelector("main");
+const real = document.querySelectorAll(".real")
+var clickedReal = null;
 console.log(hamburgerbtn, topNav, cross, crossbtn, telnav, main);
+console.log ("Currently we have " + real.length + " realisations");
 
+//Top nav for mobile
 hamburgerbtn.addEventListener("click", () => {
   hamburgerbtn.style.opacity = "0";
   hamburgerbtn.style.display = "none";
@@ -30,6 +34,32 @@ crossbtn.addEventListener("click", () => {
   topNav.style.position = "fixed";
   document.body.style.overflow = "visible";
 });
+// -----------------------------------------
+
+//Full sceen pictures
+function FullView(ImgLink){
+  // alert(ImgLink);
+  document.getElementById("Full_Image").src = ImgLink;
+  document.getElementById("Full_Image").style.display = "block";
+  document.getElementById("Full_Image_View").style.display = "flex";
+  document.getElementById("CloseButton").style.display = "block";
+
+}
+
+function CloseImage(){
+  document.getElementById("Full_Image").src = null;
+  document.getElementById("Full_Image").style.display = "none ";
+  document.getElementById("Full_Image_View").style.display = "none";
+  document.getElementById("CloseButton").style.display = "none";
+}
+
+
+
+
+
+
+//-------------------------------------------
+
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 30) {

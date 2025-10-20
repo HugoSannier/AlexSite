@@ -1,11 +1,13 @@
 const hamburgerbtn = document.querySelector(".hamburgerbtn");
-const topNav = document.querySelector(".topnav");
+const telTopNav = document.querySelector(".tel_topnav");
 const cross = document.querySelector(".cross");
 const crossbtn = document.querySelector(".crossbtn");
 const telnav = document.querySelector(".telnav");
 const main = document.querySelector("main");
 const footer = document.querySelector("footer");
-console.log(hamburgerbtn, topNav, cross, crossbtn, telnav, main, footer);
+console.log(hamburgerbtn, telTopNav, cross, crossbtn, telnav, main, footer);
+console.log("ooooooooooo")
+
 
 hamburgerbtn.addEventListener("click", () => {
   hamburgerbtn.style.opacity = "0";
@@ -13,15 +15,13 @@ hamburgerbtn.addEventListener("click", () => {
   cross.style.display = "block";
   cross.style.opacity = "1";
   telnav.style.transform = "translate(0)";
-  console.log("click !");
   main.style.opacity = "0";
   footer.style.opacity = "0";
-  topNav.style.position = "relative";
+  document.querySelector("*").style.overflow = "hidden";
 });
 
 crossbtn.addEventListener("click", () => {
-  console.log("click ");
-  topNav.classList.remove("navtel");
+  telTopNav.classList.remove("navtel");
   hamburgerbtn.style.opacity = "1";
   cross.style.opacity = "0";
   cross.style.display = "none";
@@ -29,15 +29,5 @@ crossbtn.addEventListener("click", () => {
   telnav.style.transform = "translate(-200%)";
   main.style.opacity = "1";
   footer.style.opacity = "1";
-  topNav.style.position = "fixed";
-});
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 30) {
-    topNav.style.height = "75" + "px";
-    topNav.style.borderBottom = " 1px  rgba(0, 0, 0, 0.555) solid";
-  } else if (window.scrollY < 30) {
-    topNav.style.height = "100" + "px";
-    topNav.style.borderBottom = "none";
-  }
+  document.querySelector("*").style.overflow = "visible";
 });

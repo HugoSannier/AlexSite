@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atelier</title>
-    <link rel="stylesheet" href="./style Atelier.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="topnav">
-        <a href="index.html" id="logo"> 
-          <p id="Atelier">Atelier</p>
-          <p id="jamet">Alexandre Jamet</p>
-        </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier</title>
+  <link rel="stylesheet" href="./style_Atelier.css" />
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="./assets/Logo_Alex_V2.png" alt="Logo"></a>
+    <section class="pc_section">
+      <nav class="pc_topnav">
         <ul>
-          <li><a href="./A propos.html">A propos</a></li>
+          <!-- <li><a href="./A_propos.html">A propos</a></li> -->
           <li><a href="./Atelier.html">L'Atelier</a></li>
           <li><a href="./Realisation.html">Réalisations</a></li>
           <li><a href="./contact.php">Contact</a></li>
         </ul>
-        <div class="logohamburger">
-          <a class="hamburgerbtn"href="#">&middot;&middot;&middot;</a>
-        </div>
+      </nav>
+    </section>
+    <section class="tel_section">
+      <nav class="tel_topnav">
+        <div class="logohamburger"><a class="hamburgerbtn" href="#">
+            <p>&middot;&middot;&middot;</p>
+          </a></div>
         <div class="cross">
           <a class="crossbtn" href="#">&#9587;</a>
         </div>
+        <nav class="telnav">
+          <ul>
+            <!-- <li><a href="./A_propos.html">A propos</a></li> -->
+            <li><a href="./Atelier.html">L'Atelier</a></li>
+            <li><a href="./Realisation.html">Réalisations</a></li>
+            <li><a href="./contact.php">Contact</a></li>
+          </ul>
+        </nav>
       </nav>
-      <nav class="telnav">
-        <ul>
-          <li><a href="./A propos.html">A propos</a></li>
-          <li><a href="./Atelier.html">L'Atelier</a></li>
-          <li><a href="./Realisation.html">Réalisations</a></li>
-          <li><a href="./Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    </section>
+  </header>
+  <main>
+    <div class="main_panel">
+      <div class="texte1">
+        <p>
+          L&apos;atelier s&apos;inscrit dans la tradition du métier tout en intégrant des références contemporaines dans
+          la conception des projets. <br> <br>
+          Composée de menuisiers et d&apos;ébénistes expérimentés, l&apos;équipe représente la plus grande richesse de
+          l&apos;atelier. <br>
+          Chaque membre apporte une expertise garantissant des réalisations de haute qualité. <br>
+          L&apos;atelier transmet ce savoir-faire en accueillant et en formant de nombreux jeunes. <br>
+        </p>
+      </div>
+      <div class="photo1">
+        <img src="./assets/Photo_Atelier.jpg" alt="" />
+      </div>
+      <div class="texte2">
+        <p>
+          Fidèle aux valeurs du compagnonnage, l&apos;atelier se veut un lieu de transmission et de vocation. <br>
+          Il accompagne chaque client de l&apos;esquisse à la finition, en tenant compte des besoins et des contraintes
+          techniques. <br>
+          Un soin particulier est apporté au choix des matériaux, à la qualité de fabrication et à l&apos;équilibre
+          entre technique et esthétique. <br><br>
 
-    <main></main>
+          Lorsque nécessaire, l&apos;atelier collabore avec d&apos;autres artisans partageant les mêmes valeurs.
+          Son objectif est de réaliser des pièces sur mesure, durables et parfaitement intégrées à leur environnement.
+        </p>
+      </div>
+      <div class="photo2">
+        <img src="./assets/ATELIER_ALEX_RAYNOUARD_011.jpg" alt="">
+      </div>
+    </div>
+  </main>
+  <footer class="botnav">
+    <ul>
+      <li><a href="contact.php">Contact</a></li>
+      <li>
+        <a href="https://www.instagram.com/atelier_alexandre_jamet/" target="_blank">Instagram</a>
+      </li>
+      <li><a href="https://www.linkedin.com/in/alexandre-jamet-0499b620b/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </footer>
+</body>
+<script src="./appAtelier.js"></script>
 
-  </body>
-  <script src="./appAtelier.js"></script>
 </html>

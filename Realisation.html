@@ -1,136 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atelier</title>
-    <link rel="stylesheet" href="./style Realisation.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="topnav">
-        <a href="./index.html" id="logo">
-          <p id="Atelier">Atelier</p>
-          <p id="jamet">Alexandre Jamet</p>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atelier</title>
+  <link rel="stylesheet" href="./style_Realisation.css" />
+</head>
+
+<body>
+  <div id="Full_Image_View">
+    <img id="Full_Image" alt="">
+    <span id="CloseButton" onclick="CloseImage()">&times;</span>
+  </div>
+  <header>
+    <a href="index.html"><img class="logo" src="./assets/Logo_Alex_V2.png" alt="Logo"></a>
+    <section class="pc_section">
+      <nav class="pc_topnav">
         <ul>
-          <li><a href="./A propos.html">A propos</a></li>
+          <!-- <li><a href="./A_propos.html">A propos</a></li> -->
           <li><a href="./Atelier.html">L'Atelier</a></li>
           <li><a href="./Realisation.html">Réalisations</a></li>
           <li><a href="./contact.php">Contact</a></li>
         </ul>
-        <div class="logohamburger">
-          <a class="hamburgerbtn" href="#">&middot;&middot;&middot;</a>
-        </div>
+      </nav>
+    </section>
+    <section class="tel_section">
+      <nav class="tel_topnav">
+        <div class="logohamburger"><a class="hamburgerbtn" href="#">
+            <p>&middot;&middot;&middot;</p>
+          </a></div>
         <div class="cross">
           <a class="crossbtn" href="#">&#9587;</a>
         </div>
+        <nav class="telnav">
+          <ul>
+            <li><a href="./A_propos.html">A propos</a></li>
+            <li><a href="./Atelier.html">L'Atelier</a></li>
+            <li><a href="./Realisation.html">Réalisations</a></li>
+            <li><a href="./contact.php">Contact</a></li>
+          </ul>
+        </nav>
       </nav>
-      <nav class="telnav">
-        <ul>
-          <li><a href="./A propos.html">A propos</a></li>
-          <li><a href="./Atelier.html">L'Atelier</a></li>
-          <li><a href="./Realisation.html">Réalisations</a></li>
-          <li><a href="./Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    </section>
+  </header>
+  <main id="main">
 
-    <main>
-      <div class="container">
-        <div class="photo1">
-          <a href=""></a>
-          <img src="./assets/ALEX-MAIN_COURANTE-BW.jpg" alt="" />
-        </div>
-        <div class="photo3">
-          <img src="./assets/ALEX_COMPAGNON-2-HD.jpg" alt="" />
-        </div>
-        <div class="photo2"><img src="./assets/1S2A0472.jpg" alt="" /></div>
-        <div class="photo4">
-          <img src="./assets/ALEX_ESCALIER-1.jpg" alt="" />
-        </div>
-        <div class="photo5">
-          <img src="./assets/ALEX_ESCALIER-2.jpg" alt="" />
-        </div>
-        <div class="photo6">
-          <img src="./assets/ALEX_ESCALIER-3.jpg" alt="" />
-        </div>
-        <div class="photo7">
-          <img src="./assets/ALEX_MAIN_COURANTE-1.jpg" alt="" />
-        </div>
-        <div class="photo8">
-          <img src="./assets/ALEX_MAIN_COURANTE-2.jpg" alt="" />
-        </div>
-        <div class="photo9">
-          <img src="./assets/ALEX_MAIN_COURANTE-3.jpg" alt="" />
-        </div>
-        <div class="photo10">
-          <img src="./assets/ALEX_TABLE_BASSE1-HD-v2.jpg" alt="" />
-        </div>
-        <div class="photo11">
-          <img src="./assets/ATELIER_ALEXANDRE_JAMET-1.jpg" alt="" />
-        </div>
-        <div class="photo12">
-          <img src="./assets/ATELIER_ALEXANDRE_JAMET-3.jpg" alt="" />
-        </div>
-        <div class="photo13">
-          <img src="./assets/ATELIER_ALEXANDRE_JAMET-4.jpg" alt="" />
-        </div>
-        <div class="photo14">
-          <img src="./assets/ATELIER_ALEXANDRE_JAMET-6.jpg" alt="" />
-        </div>
-        <div class="photo15">
-          <img src="./assets/ATELIER_ALEXANDRE_JAMET-7.jpg" alt="" />
-        </div>
-        <div class="photo16">
-          <img src="./assets/BUREAU_ATELIER_ALEXANDRE_JAMET-2.jpg" alt="" />
-        </div>
-        <div class="photo17">
-          <img src="./assets/BUREAU_ATELIER_ALEXANDRE_JAMET-3.jpg" alt="" />
-        </div>
-        <div class="photo18">
-          <img src="./assets/BUREAU_ATELIER_ALEXANDRE_JAMET-4.jpg" alt="" />
-        </div>
-        <div class="photo19">
-          <img src="./assets/Capture d'écran 2023-06-01 171821.png" alt="" />
-        </div>
-        <div class="photo20">
-          <img src="./assets/Meuble_Alexandre_Jamet_2021-1.jpg" alt="" />
-        </div>
-        <div class="photo21">
-          <img src="./assets/Meuble_Alexandre_Jamet_2021-2.jpg" alt="" />
-        </div>
-        <div class="photo22"><img src="./assets/YSL-1.jpg" alt="" /></div>
-        <div><img src="./assets/YSL-2.jpg" alt="" /></div>
-        <div class="photo23"><img src="./assets/YSL-3.jpg" alt="" /></div>
-        <div class="photo24">
-          <img src="./assets/YSL_PARAVENT1.jpg" alt="" />
-        </div>
-        <div class="photo25">
-          <img src="./assets/YSL_PARAVENT2.jpg" alt="" />
-        </div>
-        <div class="photo26">
-          <img src="./assets/YSL_PARAVENT3.jpg" alt="" />
-        </div>
+    <div class="container">
+      <div class="real" class="photo1">
+        <img src="./assets/ALEX-MAIN_COURANTE-BW.jpg" alt="" onclick="FullView(this.src)" />
       </div>
-    </main>
+      <div class="real" class="photo3">
+        <img src="./assets/ALEX_COMPAGNON-2-HD.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo2">
+        <img src="./assets/1S2A0472.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo4">
+        <img src="./assets/ALEX_ESCALIER-1.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo5">
+        <img src="./assets/ALEX_ESCALIER-2.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo6">
+        <img src="./assets/ALEX_ESCALIER-3.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo7">
+        <img src="./assets/ALEX_MAIN_COURANTE-1.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo8">
+        <img src="./assets/ALEX_MAIN_COURANTE-2.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo9">
+        <img src="./assets/ALEX_MAIN_COURANTE-3.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo10">
+        <img src="./assets/ALEX_TABLE_BASSE1-HD-v2.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo11">
+        <img src="./assets/ATELIER_ALEXANDRE_JAMET-1.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo12">
+        <img src="./assets/ATELIER_ALEXANDRE_JAMET-3.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo13">
+        <img src="./assets/ATELIER_ALEXANDRE_JAMET-4.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo14">
+        <img src="./assets/ATELIER_ALEXANDRE_JAMET-6.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo15">
+        <img src="./assets/ATELIER_ALEXANDRE_JAMET-7.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo16">
+        <img src="./assets/BUREAU_ATELIER_ALEXANDRE_JAMET-2.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo17">
+        <img src="./assets/BUREAU_ATELIER_ALEXANDRE_JAMET-3.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo18">
+        <img src="./assets/BUREAU_ATELIER_ALEXANDRE_JAMET-4.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo19">
+        <img src="./assets/Capture d'écran 2023-06-01 171821.png" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo20">
+        <img src="./assets/Meuble_Alexandre_Jamet_2021-1.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo21">
+        <img src="./assets/Meuble_Alexandre_Jamet_2021-2.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="photo22"><img src="./assets/YSL-1.jpg" alt="" onclick="FullView(this.src)" /></div>
+      <div><img src="./assets/YSL-2.jpg" alt="" onclick="FullView(this.src)" /></div>
+      <div class="real" class="photo23"><img src="./assets/YSL-3.jpg" alt="" onclick="FullView(this.src)" /></div>
+      <div class="real" class="photo24">
+        <img src="./assets/YSL_PARAVENT1.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo25">
+        <img src="./assets/YSL_PARAVENT2.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+      <div class="real" class="photo26">
+        <img src="./assets/YSL_PARAVENT3.jpg" alt="" onclick="FullView(this.src)" />
+      </div>
+    </div>
+  </main>
 
-    <footer>
-      <section class="botnav">
-        <ul>
-          <li><a href="#">Back to top</a></li>
-          <li><a href="#">Contact</a></li>
-          <li>
-            <a href="https://www.instagram.com/jametalexandre/" target="_blank"
-              >Instagram</a
-            >
-          </li>
-          <li><a href="#">LinkedIn</a></li>
-        </ul>
-      </section>
-    </footer>
-  </body>
-  <script src="./appRealisation.js"></script>
+  <footer>
+    <section class="botnav">
+      <ul>
+        <li><a href="#">Back to top</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="https://www.instagram.com/jametalexandre/" target="_blank">Instagram</a>
+        </li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </section>
+  </footer>
+</body>
+<script src="./appRealisation.js"></script>
+
 </html>

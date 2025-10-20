@@ -1,5 +1,5 @@
 const hamburgerbtn = document.querySelector(".hamburgerbtn");
-const topNav = document.querySelector(".topnav");
+const telTopNav = document.querySelector(".tel_topnav");
 const cross = document.querySelector(".cross");
 const crossbtn = document.querySelector(".crossbtn");
 const telnav = document.querySelector(".telnav");
@@ -9,19 +9,19 @@ const images = document.querySelectorAll("img");
 const nbSlide = images.length;
 const next = document.querySelector(".bouttonnext");
 const previous = document.querySelector(".bouttonprevious");
-let count = 0;
+let count = 2;
 console.log(
-  hamburgerbtn,
-  topNav,
-  cross,
-  crossbtn,
-  telnav,
-  main,
-  footer,
-  images,
-  nbSlide,
-  next,
-  previous,
+  // hamburgerbtn,
+  // telTopNav,
+  // cross,
+  // crossbtn,
+  // telnav,
+  // main,
+  // footer,
+  // images,
+  // nbSlide,
+  // next,
+  // previous,
   count
 );
 
@@ -31,7 +31,7 @@ function slideSuivante() {
   if (count < nbSlide - 1) {
     count++;
   } else {
-    count = 0;
+    count = 1;
   }
   images[count].classList.add("active");
   console.log(count);
@@ -40,7 +40,7 @@ function slideSuivante() {
 function slidePrecedente() {
   images[count].classList.remove("active");
 
-  if (count > 0) {
+  if (count > 1) {
     count--;
   } else {
     count = nbSlide - 1;
@@ -58,14 +58,12 @@ hamburgerbtn.addEventListener("click", () => {
   cross.style.display = "block";
   cross.style.opacity = "1";
   telnav.style.transform = "translate(0)";
-  console.log("click !");
   main.style.opacity = "0";
   footer.style.opacity = "0";
 });
 
 crossbtn.addEventListener("click", () => {
-  console.log("click ");
-  topNav.classList.remove("navtel");
+  telTopNav.classList.remove("navtel");
   hamburgerbtn.style.opacity = "1";
   cross.style.opacity = "0";
   cross.style.display = "none";

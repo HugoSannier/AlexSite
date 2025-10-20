@@ -6,18 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-    //si le formulaire a été soumis
-    if (isset($_POST["Text"])) {
+    <?php
 
-        $retour = mail("sannierdurandhugo@protonmail.com", $_POST["Name"], $_POST["Text"], "");
-    
-        if($retour) {
-            echo "<p>L'email à bien été envoyé.</p>";
-        }
+    $retour = mail("sannierdurandhugo@protonmail.com", "Essaie", "pouet", "From:tom.hanks@gmail.com");
+
+    if($retour) {
+        echo "<p>L'email à bien été envoyé.</p>";
     }
     ?>
-
     
 </body>
 </html>
